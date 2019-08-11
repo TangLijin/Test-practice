@@ -33,7 +33,7 @@ public class SalesApp {
 		uploadReportDocument(report);
 	}
 
-	private List<SalesReportData> filterReportDataList(List<SalesReportData> reportDataList,boolean isSupervisor, int maxRow) {
+	public List<SalesReportData> filterReportDataList(List<SalesReportData> reportDataList,boolean isSupervisor, int maxRow) {
 		List<SalesReportData> filteredReportDataList_first = null;
 		for (SalesReportData data : reportDataList) {
 			if ("SalesActivity".equalsIgnoreCase(data.getType())) {
@@ -50,13 +50,13 @@ public class SalesApp {
 		return filteredReportDataList_second;
 	}
 
-	private void uploadReportDocument(SalesActivityReport report) {
+	public void uploadReportDocument(SalesActivityReport report) {
 		EcmService ecmService = new EcmService();
 		ecmService.uploadDocument(report.toXml());
 	}
 
 
-	private List<String> getHeaders(boolean isNatTrade) {
+	public List<String> getHeaders(boolean isNatTrade) {
 		return isNatTrade ? Arrays.asList("Sales ID", "Sales Name", "Activity", "Time")
 				: Arrays.asList("Sales ID", "Sales Name", "Activity", "Local Time");
 	}
@@ -84,7 +84,7 @@ public class SalesApp {
 		return true;
 	}
 
-	private SalesActivityReport generateReport(List<String> headers, List<SalesReportData> reportDataList) {
+	public SalesActivityReport generateReport(List<String> headers, List<SalesReportData> reportDataList) {
 		// TODO Auto-generated method stub
 		return null;
 	}

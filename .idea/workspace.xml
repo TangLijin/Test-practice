@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13d69d72-a441-4cb4-95f4-fc083fbe7edd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sales/SalesApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sales/SalesApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sales/SalesApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sales/SalesApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parking/VipParkingStrategyJMockitTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parking/VipParkingStrategyJMockitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/parking/VipParkingStrategyJMockitTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sales/SalesAppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sales/SalesAppTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/sales/SalesApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="22" column="111" selection-start-line="22" selection-start-column="111" selection-end-line="22" selection-end-column="111" />
+            <state relative-caret-position="341">
+              <caret line="78" column="37" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="37" />
               <folding>
                 <element signature="e#2285#2286#0" expanded="true" />
                 <element signature="e#2334#2335#0" expanded="true" />
@@ -33,8 +39,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="1584">
+              <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2074#2082#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,6 +68,7 @@
         <option value="$PROJECT_DIR$/src/test/java/parking/VipParkingStrategyTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/parking/VipParkingStrategyJMockitTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/sales/SalesApp.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java" />
       </list>
     </option>
   </component>
@@ -68,10 +79,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-283" />
-    <option name="y" value="16" />
-    <option name="width" value="1400" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="831" />
+    <option name="y" value="1" />
+    <option name="width" value="1162" />
     <option name="height" value="1000" />
   </component>
   <component name="ProjectView">
@@ -79,8 +90,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -133,18 +142,28 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="parking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="junit_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Test-practice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sales" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tdd_practice_8_9" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -158,82 +177,81 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VipParkingStrategyJMockitTest.testCalculateHourlyPrice_givenSunday_thenPriceIsDoubleOfSundayPrice">
-    <configuration name="InOrderParkingStrategyTest.testCreateReceipt_givenACarAndAParkingLog_thenGiveAReceiptWithCarNameAndParkingLotName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SalesAppTest">
+    <configuration name="SalesAppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parking.*" />
+          <option name="PATTERN" value="sales.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="parking" />
-      <option name="MAIN_CLASS_NAME" value="parking.InOrderParkingStrategyTest" />
-      <option name="METHOD_NAME" value="testCreateReceipt_givenACarAndAParkingLog_thenGiveAReceiptWithCarNameAndParkingLotName" />
+      <option name="PACKAGE_NAME" value="sales" />
+      <option name="MAIN_CLASS_NAME" value="sales.SalesAppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SalesAppTest.testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sales.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sales" />
+      <option name="MAIN_CLASS_NAME" value="sales.SalesAppTest" />
+      <option name="METHOD_NAME" value="testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InOrderParkingStrategyTest.testPark_givenNoAvailableParkingLot_thenCreateNoSpaceReceipt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SalesAppTest.testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parking.*" />
+          <option name="PATTERN" value="sales.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="parking" />
-      <option name="MAIN_CLASS_NAME" value="parking.InOrderParkingStrategyTest" />
-      <option name="METHOD_NAME" value="testPark_givenNoAvailableParkingLot_thenCreateNoSpaceReceipt" />
+      <option name="PACKAGE_NAME" value="sales" />
+      <option name="MAIN_CLASS_NAME" value="sales.SalesAppTest" />
+      <option name="METHOD_NAME" value="testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VipParkingStrategyJMockitTest.testCalculateHourlyPrice_givenSunday_thenPriceIsDoubleOfSundayPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SalesAppTest.testIsSalesIdEffective_giveTomorrowStartAndFurtherDayEnd_thenReturnFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parking.*" />
+          <option name="PATTERN" value="sales.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="parking" />
-      <option name="MAIN_CLASS_NAME" value="parking.VipParkingStrategyJMockitTest" />
-      <option name="METHOD_NAME" value="testCalculateHourlyPrice_givenSunday_thenPriceIsDoubleOfSundayPrice" />
+      <option name="PACKAGE_NAME" value="sales" />
+      <option name="MAIN_CLASS_NAME" value="sales.SalesAppTest" />
+      <option name="METHOD_NAME" value="testIsSalesIdEffective_giveTomorrowStartAndFurtherDayEnd_thenReturnFalse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VipParkingStrategyTest.testPark_givenAVipCarAndAFullParkingLog_thenGiveAReceiptWithCarNameAndParkingLotName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SalesAppTest.testIsSalesIdEffective_giveYesterdayBeforeStartAndYesterdayEnd_thenReturnFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parking.*" />
+          <option name="PATTERN" value="sales.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="parking" />
-      <option name="MAIN_CLASS_NAME" value="parking.VipParkingStrategyTest" />
-      <option name="METHOD_NAME" value="testPark_givenAVipCarAndAFullParkingLog_thenGiveAReceiptWithCarNameAndParkingLotName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VipParkingStrategyTest.testPark_givenCarIsNotVipAndAFullParkingLog_thenGiveNoSpaceReceipt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="parking.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="parking" />
-      <option name="MAIN_CLASS_NAME" value="parking.VipParkingStrategyTest" />
-      <option name="METHOD_NAME" value="testPark_givenCarIsNotVipAndAFullParkingLog_thenGiveNoSpaceReceipt" />
+      <option name="PACKAGE_NAME" value="sales" />
+      <option name="MAIN_CLASS_NAME" value="sales.SalesAppTest" />
+      <option name="METHOD_NAME" value="testIsSalesIdEffective_giveYesterdayBeforeStartAndYesterdayEnd_thenReturnFalse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -241,11 +259,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VipParkingStrategyJMockitTest.testCalculateHourlyPrice_givenSunday_thenPriceIsDoubleOfSundayPrice" />
-        <item itemvalue="JUnit.VipParkingStrategyTest.testPark_givenCarIsNotVipAndAFullParkingLog_thenGiveNoSpaceReceipt" />
-        <item itemvalue="JUnit.VipParkingStrategyTest.testPark_givenAVipCarAndAFullParkingLog_thenGiveAReceiptWithCarNameAndParkingLotName" />
-        <item itemvalue="JUnit.InOrderParkingStrategyTest.testPark_givenNoAvailableParkingLot_thenCreateNoSpaceReceipt" />
-        <item itemvalue="JUnit.InOrderParkingStrategyTest.testCreateReceipt_givenACarAndAParkingLog_thenGiveAReceiptWithCarNameAndParkingLotName" />
+        <item itemvalue="JUnit.SalesAppTest" />
+        <item itemvalue="JUnit.SalesAppTest.testIsSalesIdEffective_giveTomorrowStartAndFurtherDayEnd_thenReturnFalse" />
+        <item itemvalue="JUnit.SalesAppTest.testIsSalesIdEffective_giveYesterdayBeforeStartAndYesterdayEnd_thenReturnFalse" />
+        <item itemvalue="JUnit.SalesAppTest.testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse" />
+        <item itemvalue="JUnit.SalesAppTest.testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales" />
       </list>
     </recent_temporary>
   </component>
@@ -263,42 +281,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="InOrderParkingStrategyTest_testCreateReceipt_givenACarAndAParkingLog_thenGiveAReceiptWithCarNameAndParkingLotName - 2019.08.09 at 15h 31m 42s.xml">
-      <configuration name="InOrderParkingStrategyTest.testCreateReceipt_givenACarAndAParkingLog_thenGiveAReceiptWithCarNameAndParkingLotName" configurationId="JUnit" />
+    <history-entry file="SalesAppTest_testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse - 2019.08.11 at 19h 25m 58s.xml">
+      <configuration name="SalesAppTest.testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InOrderParkingStrategyTest_testPark_givenNoAvailableParkingLot_thenCreateNoSpaceReceipt - 2019.08.09 at 15h 44m 27s.xml">
-      <configuration name="InOrderParkingStrategyTest.testPark_givenNoAvailableParkingLot_thenCreateNoSpaceReceipt" configurationId="JUnit" />
+    <history-entry file="SalesAppTest_testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse - 2019.08.11 at 19h 27m 44s.xml">
+      <configuration name="SalesAppTest.testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InOrderParkingStrategyTest_testPark_givenNoAvailableParkingLot_thenCreateNoSpaceReceipt - 2019.08.09 at 15h 45m 53s.xml">
-      <configuration name="InOrderParkingStrategyTest.testPark_givenNoAvailableParkingLot_thenCreateNoSpaceReceipt" configurationId="JUnit" />
+    <history-entry file="SalesAppTest_testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse - 2019.08.11 at 19h 31m 17s.xml">
+      <configuration name="SalesAppTest.testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InOrderParkingStrategyTest_testPark_givenNoAvailableParkingLot_thenCreateNoSpaceReceipt - 2019.08.09 at 15h 47m 22s.xml">
-      <configuration name="InOrderParkingStrategyTest.testPark_givenNoAvailableParkingLot_thenCreateNoSpaceReceipt" configurationId="JUnit" />
+    <history-entry file="SalesAppTest_testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse - 2019.08.11 at 19h 32m 34s.xml">
+      <configuration name="SalesAppTest.testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VipParkingStrategyTest_testPark_givenAVipCarAndAFullParkingLog_thenGiveAReceiptWithCarNameAndParkingLotName - 2019.08.09 at 15h 55m 58s.xml">
-      <configuration name="VipParkingStrategyTest.testPark_givenAVipCarAndAFullParkingLog_thenGiveAReceiptWithCarNameAndParkingLotName" configurationId="JUnit" />
+    <history-entry file="SalesAppTest_testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse - 2019.08.11 at 19h 33m 21s.xml">
+      <configuration name="SalesAppTest.testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VipParkingStrategyTest_testPark_givenCarIsNotVipAndAFullParkingLog_thenGiveNoSpaceReceipt - 2019.08.09 at 15h 57m 39s.xml">
-      <configuration name="VipParkingStrategyTest.testPark_givenCarIsNotVipAndAFullParkingLog_thenGiveNoSpaceReceipt" configurationId="JUnit" />
+    <history-entry file="SalesAppTest_testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse - 2019.08.11 at 19h 37m 24s.xml">
+      <configuration name="SalesAppTest.testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VipParkingStrategyJMockitTest_testCalculateHourlyPrice_givenSunday_thenPriceIsDoubleOfSundayPrice - 2019.08.09 at 16h 33m 20s.xml">
-      <configuration name="VipParkingStrategyJMockitTest.testCalculateHourlyPrice_givenSunday_thenPriceIsDoubleOfSundayPrice" configurationId="JUnit" />
+    <history-entry file="SalesAppTest_testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse - 2019.08.11 at 19h 38m 54s.xml">
+      <configuration name="SalesAppTest.testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VipParkingStrategyJMockitTest_testCalculateHourlyPrice_givenSunday_thenPriceIsDoubleOfSundayPrice - 2019.08.09 at 16h 35m 49s.xml">
-      <configuration name="VipParkingStrategyJMockitTest.testCalculateHourlyPrice_givenSunday_thenPriceIsDoubleOfSundayPrice" configurationId="JUnit" />
+    <history-entry file="SalesAppTest_testIsSalesIdEffective_giveYesterdayBeforeStartAndYesterdayEnd_thenReturnFalse - 2019.08.11 at 19h 42m 46s.xml">
+      <configuration name="SalesAppTest.testIsSalesIdEffective_giveYesterdayBeforeStartAndYesterdayEnd_thenReturnFalse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VipParkingStrategyJMockitTest_testCalculateHourlyPrice_givenSunday_thenPriceIsDoubleOfSundayPrice - 2019.08.09 at 16h 36m 50s.xml">
-      <configuration name="VipParkingStrategyJMockitTest.testCalculateHourlyPrice_givenSunday_thenPriceIsDoubleOfSundayPrice" configurationId="JUnit" />
+    <history-entry file="SalesAppTest_testIsSalesIdEffective_giveTomorrowStartAndFurtherDayEnd_thenReturnFalse - 2019.08.11 at 19h 44m 40s.xml">
+      <configuration name="SalesAppTest.testIsSalesIdEffective_giveTomorrowStartAndFurtherDayEnd_thenReturnFalse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VipParkingStrategyJMockitTest_testCalculateHourlyPrice_givenSunday_thenPriceIsDoubleOfSundayPrice - 2019.08.09 at 16h 38m 36s.xml">
-      <configuration name="VipParkingStrategyJMockitTest.testCalculateHourlyPrice_givenSunday_thenPriceIsDoubleOfSundayPrice" configurationId="JUnit" />
+    <history-entry file="SalesAppTest - 2019.08.11 at 19h 45m 02s.xml">
+      <configuration name="SalesAppTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18528464" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13909775" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -308,16 +326,17 @@
       <window_info id="JRebel" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29035753" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.91729325" visible="true" weight="0.108294934" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.082706764" side_tool="true" weight="0.3156682" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="bottom" id="JRebel Console" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="JRebel Executor" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -407,24 +426,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/parking/VipParkingStrategyJMockitTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/parking/VipParkingStrategyTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1009">
           <caret line="59" column="63" selection-start-line="59" selection-start-column="63" selection-end-line="59" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/parking/ParkingLotTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -438,17 +443,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/parking/ParkingLotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/parking/VipParkingStrategyJMockitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        <state relative-caret-position="1584">
+          <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2074#2082#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sales/SalesApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="22" column="111" selection-start-line="22" selection-start-column="111" selection-end-line="22" selection-end-column="111" />
+        <state relative-caret-position="341">
+          <caret line="78" column="37" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="37" />
           <folding>
             <element signature="e#2285#2286#0" expanded="true" />
             <element signature="e#2334#2335#0" expanded="true" />
