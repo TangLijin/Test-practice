@@ -20,7 +20,7 @@ public class SalesApp {
 		this.ecmService = ecmService;
 	}
 
-	public void generateSalesActivityReport(String salesId,boolean isNatTrade, boolean isSupervisor, int maxRow){
+	public void generateSalesActivityReport(String salesId,int maxRow, boolean isNatTrade, boolean isSupervisor){
 		Sales sales = getSales(salesId);
 		List<SalesReportData> salesReportDataList = getsalesReportDataList(sales);
 
