@@ -24,6 +24,9 @@ public class SalesAppTest {
 	@Mock
 	SalesReportDao salesReportDao;
 
+	@Mock
+	EcmService ecmService;
+
 	@InjectMocks
 	SalesApp mockSalesApp;
 
@@ -139,4 +142,9 @@ public class SalesAppTest {
 		verify(salesApp, times(1)).uploadReportDocument(any());
 	}
 
+	@Test
+	public void testUploadReportDocument_giveSalesActivityReport_thenUploadDocument() {
+		mockSalesApp.uploadReportDocument(new SalesActivityReport());
+		verify(ecmService, times(1)).uploadDocument(any());
+	}
 }

@@ -51,7 +51,6 @@ public class SalesApp {
 	}
 
 	public void uploadReportDocument(SalesActivityReport report) {
-		EcmService ecmService = new EcmService();
 		ecmService.uploadDocument(report.toXml());
 	}
 
