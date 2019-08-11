@@ -9,10 +9,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 import static org.junit.Assert.*;
 import static org.mockito.Matchers.*;
@@ -84,6 +81,7 @@ public class SalesAppTest {
 
 //	@Test
 //	public void testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales(){
+//
 //		Sales sales = mock(Sales.class);
 //
 //		when(mockSalesApp.isSalesIdEffective(sales)).thenReturn(true);
@@ -119,6 +117,26 @@ public class SalesAppTest {
 		List<String> headers = salesApp.getHeaders(false);
 
 		Assert.assertEquals("Local Time", headers.get(3));
+	}
+
+	@Test
+	public void testGenerateReport_giveSaleIdAndIsNatTrade() {
+		SalesApp salesApp = spy(new SalesApp());
+		Sales sales = mock(Sales.class);
+		doReturn(true).when(salesApp).isSalesIdEffective(any());
+		doReturn(sales).when(salesApp).getSales(any());
+		doReturn(new ArrayList<String>()).when(salesApp).getsalesReportDataList(any());
+		doReturn(new ArrayList<String>()).when(salesApp).getHeaders(anyBoolean());
+		doReturn(new SalesActivityReport()).when(salesApp).generateReport(anyList(), anyList());
+		doNothing().when(salesApp).uploadReportDocument(any());
+
+		salesApp.generateSalesActivityReport("404",5,true, true);
+
+		verify(salesApp, times(1)).getSales(any());
+		verify(salesApp, times(1)).getsalesReportDataList(any());
+		verify(salesApp, times(1)).generateReport(anyList(), anyList());
+		verify(salesApp, times(1)).getHeaders(anyBoolean());
+		verify(salesApp, times(1)).uploadReportDocument(any());
 	}
 
 }

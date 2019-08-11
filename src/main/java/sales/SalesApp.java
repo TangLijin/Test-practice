@@ -24,7 +24,7 @@ public class SalesApp {
 		Sales sales = getSales(salesId);
 		List<SalesReportData> salesReportDataList = getsalesReportDataList(sales);
 
-		List<SalesReportData> filteredReportDataList = filterReportDataList(salesReportDataList, isSupervisor, maxRow);
+		//List<SalesReportData> filteredReportDataList = filterReportDataList(salesReportDataList, isSupervisor, maxRow);
 
 		List<String> headers = getHeaders(isNatTrade);
 

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13d69d72-a441-4cb4-95f4-fc083fbe7edd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/sales/SalesApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sales/SalesApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -20,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sales/SalesApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+            <state relative-caret-position="462">
+              <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
               <folding>
                 <element signature="e#2285#2286#0" expanded="true" />
                 <element signature="e#2334#2335#0" expanded="true" />
@@ -33,10 +34,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="109" column="10" selection-start-line="109" selection-start-column="10" selection-end-line="109" selection-end-column="10" />
+            <state relative-caret-position="44">
+              <caret line="122" column="34" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse#0;class#SalesAppTest#0" />
                 <element signature="method#testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse#1;class#SalesAppTest#0" />
                 <element signature="method#testIsSalesIdEffective_giveYesterdayBeforeStartAndYesterdayEnd_thenReturnFalse#1;class#SalesAppTest#0" />
               </folding>
@@ -75,9 +77,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="824" />
-    <option name="width" value="1162" />
-    <option name="height" value="1047" />
+    <option name="x" value="816" />
+    <option name="y" value="11" />
+    <option name="width" value="1121" />
+    <option name="height" value="985" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -187,6 +190,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SalesAppTest.testGenerateReport_giveSaleIdAndIsNatTrade" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sales.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sales" />
+      <option name="MAIN_CLASS_NAME" value="sales.SalesAppTest" />
+      <option name="METHOD_NAME" value="testGenerateReport_giveSaleIdAndIsNatTrade" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SalesAppTest.testGetHeaders_giveIsNatTradeIsFalse_thenReturnHeadersContainsStringLocalTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit_test" />
       <extension name="coverage">
@@ -198,38 +217,6 @@
       <option name="PACKAGE_NAME" value="sales" />
       <option name="MAIN_CLASS_NAME" value="sales.SalesAppTest" />
       <option name="METHOD_NAME" value="testGetHeaders_giveIsNatTradeIsFalse_thenReturnHeadersContainsStringLocalTime" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SalesAppTest.testGetHeaders_giveIsNatTradeIsTrue_thenReturnHeadersContainsStringTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sales.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sales" />
-      <option name="MAIN_CLASS_NAME" value="sales.SalesAppTest" />
-      <option name="METHOD_NAME" value="testGetHeaders_giveIsNatTradeIsTrue_thenReturnHeadersContainsStringTime" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SalesAppTest.testGetSalesReportDataList_giveSales_thenReturnReportDataList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="junit_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sales.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sales" />
-      <option name="MAIN_CLASS_NAME" value="sales.SalesAppTest" />
-      <option name="METHOD_NAME" value="testGetSalesReportDataList_giveSales_thenReturnReportDataList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -251,13 +238,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SalesAppTest.testGetSales_giveSalesIdIsNull_thenReturnNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sales.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sales" />
+      <option name="MAIN_CLASS_NAME" value="sales.SalesAppTest" />
+      <option name="METHOD_NAME" value="testGetSales_giveSalesIdIsNull_thenReturnNull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SalesAppTest" />
-        <item itemvalue="JUnit.SalesAppTest.testGetHeaders_giveIsNatTradeIsFalse_thenReturnHeadersContainsStringLocalTime" />
-        <item itemvalue="JUnit.SalesAppTest.testGetHeaders_giveIsNatTradeIsTrue_thenReturnHeadersContainsStringTime" />
-        <item itemvalue="JUnit.SalesAppTest.testGetSalesReportDataList_giveSales_thenReturnReportDataList" />
         <item itemvalue="JUnit.SalesAppTest.testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales" />
+        <item itemvalue="JUnit.SalesAppTest.testGetSales_giveSalesIdIsNull_thenReturnNull" />
+        <item itemvalue="JUnit.SalesAppTest.testGenerateReport_giveSaleIdAndIsNatTrade" />
+        <item itemvalue="JUnit.SalesAppTest.testGetHeaders_giveIsNatTradeIsFalse_thenReturnHeadersContainsStringLocalTime" />
       </list>
     </recent_temporary>
   </component>
@@ -275,42 +278,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SalesAppTest_testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales - 2019.08.11 at 20h 07m 54s.xml">
+    <history-entry file="SalesAppTest_testGetHeaders_giveIsNatTradeIsTrue_thenReturnHeadersContainsStringTime - 2019.08.11 at 20h 27m 11s.xml">
+      <configuration name="SalesAppTest.testGetHeaders_giveIsNatTradeIsTrue_thenReturnHeadersContainsStringTime" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest_testGetHeaders_giveIsNatTradeIsFalse_thenReturnHeadersContainsStringLocalTime - 2019.08.11 at 20h 27m 18s.xml">
+      <configuration name="SalesAppTest.testGetHeaders_giveIsNatTradeIsFalse_thenReturnHeadersContainsStringLocalTime" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest - 2019.08.11 at 20h 27m 28s.xml">
+      <configuration name="SalesAppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest_testGenerateReport_giveSaleIdAndIsNatTrade - 2019.08.11 at 21h 07m 33s.xml">
+      <configuration name="SalesAppTest.testGenerateReport_giveSaleIdAndIsNatTrade" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest_testGenerateReport_giveSaleIdAndIsNatTrade - 2019.08.11 at 21h 08m 57s.xml">
+      <configuration name="SalesAppTest.testGenerateReport_giveSaleIdAndIsNatTrade" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest_testGenerateReport_giveSaleIdAndIsNatTrade - 2019.08.11 at 21h 09m 52s.xml">
+      <configuration name="SalesAppTest.testGenerateReport_giveSaleIdAndIsNatTrade" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest - 2019.08.11 at 21h 10m 46s.xml">
+      <configuration name="SalesAppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest_testGetSales_giveSalesIdIsNull_thenReturnNull - 2019.08.11 at 21h 11m 11s.xml">
+      <configuration name="SalesAppTest.testGetSales_giveSalesIdIsNull_thenReturnNull" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SalesAppTest_testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales - 2019.08.11 at 21h 12m 05s.xml">
       <configuration name="SalesAppTest.testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SalesAppTest_testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales - 2019.08.11 at 20h 08m 19s.xml">
-      <configuration name="SalesAppTest.testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest_testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales - 2019.08.11 at 20h 09m 07s.xml">
-      <configuration name="SalesAppTest.testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest_testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales - 2019.08.11 at 20h 10m 07s.xml">
-      <configuration name="SalesAppTest.testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest_testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales - 2019.08.11 at 20h 10m 43s.xml">
-      <configuration name="SalesAppTest.testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest_testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales - 2019.08.11 at 20h 11m 09s.xml">
-      <configuration name="SalesAppTest.testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest_testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales - 2019.08.11 at 20h 14m 08s.xml">
-      <configuration name="SalesAppTest.testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest_testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales - 2019.08.11 at 20h 14m 51s.xml">
-      <configuration name="SalesAppTest.testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest_testGetSalesReportDataList_giveSales_thenReturnReportDataList - 2019.08.11 at 20h 18m 18s.xml">
-      <configuration name="SalesAppTest.testGetSalesReportDataList_giveSales_thenReturnReportDataList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SalesAppTest_testGetSalesReportDataList_giveSales_thenReturnReportDataList - 2019.08.11 at 20h 19m 14s.xml">
-      <configuration name="SalesAppTest.testGetSalesReportDataList_giveSales_thenReturnReportDataList" configurationId="JUnit" />
+    <history-entry file="SalesAppTest - 2019.08.11 at 21h 14m 40s.xml">
+      <configuration name="SalesAppTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13319013" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06337272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -320,7 +323,7 @@
       <window_info id="JRebel" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.91729325" visible="true" weight="0.108294934" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.91729325" visible="true" weight="0.30069125" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -453,8 +456,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sales/SalesApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+        <state relative-caret-position="462">
+          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
           <folding>
             <element signature="e#2285#2286#0" expanded="true" />
             <element signature="e#2334#2335#0" expanded="true" />
@@ -464,10 +467,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/sales/SalesAppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="109" column="10" selection-start-line="109" selection-start-column="10" selection-end-line="109" selection-end-column="10" />
+        <state relative-caret-position="44">
+          <caret line="122" column="34" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse#0;class#SalesAppTest#0" />
             <element signature="method#testIsSalesIdEffective_giveTodayAfterLastDate_thenReturnFalse#1;class#SalesAppTest#0" />
             <element signature="method#testIsSalesIdEffective_giveYesterdayBeforeStartAndYesterdayEnd_thenReturnFalse#1;class#SalesAppTest#0" />
           </folding>
