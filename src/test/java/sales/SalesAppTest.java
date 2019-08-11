@@ -105,6 +105,20 @@ public class SalesAppTest {
 		verify(salesReportDao, times(1)).getReportData(any());
 	}
 
+	@Test
+	public void testGetHeaders_giveIsNatTradeIsTrue_thenReturnHeadersContainsStringTime() {
+		SalesApp salesApp = new SalesApp();
+		List<String> headers = salesApp.getHeaders(true);
 
+		Assert.assertEquals("Time", headers.get(3));
+	}
+
+	@Test
+	public void testGetHeaders_giveIsNatTradeIsFalse_thenReturnHeadersContainsStringLocalTime() {
+		SalesApp salesApp = new SalesApp();
+		List<String> headers = salesApp.getHeaders(false);
+
+		Assert.assertEquals("Local Time", headers.get(3));
+	}
 
 }
