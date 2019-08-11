@@ -6,10 +6,13 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 
+import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
 
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 import static org.junit.Assert.*;
 import static org.mockito.Matchers.*;
@@ -20,6 +23,9 @@ import static org.mockito.Mockito.*;
 public class SalesAppTest {
 	@Mock
 	SalesDao salesDao;
+
+	@Mock
+	SalesReportDao salesReportDao;
 
 	@InjectMocks
 	SalesApp mockSalesApp;
@@ -70,23 +76,34 @@ public class SalesAppTest {
 	}
 
 
-//	@Test
-//	public void testGetSales_giveSalesIdIsNull_thenReturnNull(){
-//		Sales sales =mockSalesApp.getSales(null);
-//		Assert.assertNull(sales);
-//	}
-//
+	@Test
+	public void testGetSales_giveSalesIdIsNull_thenReturnNull(){
+		Sales sales =mockSalesApp.getSales(null);
+		Assert.assertNull(sales);
+	}
+
 //	@Test
 //	public void testGetSales_giveSalesIdAndisEffectiveSalesId_thenReturnSales(){
 //		Sales sales = mock(Sales.class);
+//
+//		when(mockSalesApp.isSalesIdEffective(sales)).thenReturn(true);
 //		when(salesDao.getSalesBySalesId(anyString())).thenReturn(sales);
-//		when(mockSalesApp.isSalesIdEffective(any())).thenReturn(true);
 //
 //		Sales result = mockSalesApp.getSales(anyString());
 //
 //		Assert.assertNotNull(result);
 //	}
 
+	@Test
+	public void testGetSalesReportDataList_giveSales_thenReturnReportDataList() {
+		List<SalesReportData> reportDataList = Arrays.asList(new SalesReportData());
+		when(salesReportDao.getReportData(any())).thenReturn(reportDataList);
+
+		List<SalesReportData> result = mockSalesApp.getsalesReportDataList(any());
+
+		Assert.assertEquals(1, result.size());
+		verify(salesReportDao, times(1)).getReportData(any());
+	}
 
 
 
